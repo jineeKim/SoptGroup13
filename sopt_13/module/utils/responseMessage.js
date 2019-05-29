@@ -9,7 +9,9 @@ module.exports = {
     CREATED_USER_FAIL: "회원 가입 실패",
     DELETE_USER: "회원 탈퇴 성공",
 
-    ALREADY_USER: "이미 회원입니다.",
+    ALREADY_USER: "이미 가입된 아이디 입니다.",
+    SENTENCE_LENGTH_ERROR: "아이디 혹은 비밀번호 길이가 잘못되었습니다.",
+    NAME_LENGTH_ERROR: "이름은 4자 이하여야 합니다",
     NO_USER: "존재하지 않는 회원입니다.",
     MISS_MATCH_PW: "비밀번호가 맞지 않습니다.",
     MISS_MATCH_ID: "아이디가 맞지 않습니다.",
