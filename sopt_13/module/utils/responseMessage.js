@@ -21,9 +21,10 @@ module.exports = {
     SAVE_SUCCESS: "데이터 저장 성공",
     SAVE_FAIL: "데이터 저장 실패",
     READ_FAIL: "데이터 조회 실패",
-    ROAD_SUCCESS: "데이터 조회 성공",
+    LOAD_SUCCESS: "데이터 조회 성공",
     DELETE_SUCCESS: "데이터 삭제 성공",
     DELETE_FAIL: "데이터 삭제 실패",
 
-    BAD_REQUEST: "잘못된 요청"
+    BAD_REQUEST: "잘못된 요청",
+    INTERNAL_SERVER_ERROR: "서버 내부 에러"
 };
