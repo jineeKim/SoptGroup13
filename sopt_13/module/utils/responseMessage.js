@@ -26,6 +26,7 @@ module.exports = {
   DELETE_FAIL: "데이터 삭제 실패",
 
   BAD_REQUEST: "잘못된 요청",
+  INTERNAL_SERVER_ERROR: "서버 내부 에러",
 
   NO_COMIC: "존재하지 않는 만화입니다.",
   NO_EPISODE: "존재하지 않는 에피소드 입니다.",
