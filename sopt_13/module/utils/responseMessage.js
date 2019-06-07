@@ -26,5 +26,6 @@ module.exports = {
     DELETE_FAIL: "데이터 삭제 실패",
 
     BAD_REQUEST: "잘못된 요청",
-    INTERNAL_SERVER_ERROR: "서버 내부 에러"
+    INTERNAL_SERVER_ERROR: "서버 내부 에러",
+    BAD_PARAMS: "파라미터 값이 잘못되었습니다"
 };
