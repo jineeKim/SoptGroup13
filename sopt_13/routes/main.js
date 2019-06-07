@@ -23,11 +23,12 @@ router.post('/postComics', upload.single('photo'), async (req, res) => {
 });
 
 router.post('/:flag', async (req, res) => {
+    const flag = req.params.flag;
+    console.log(flag);
     const selectFlagQuery = 'SELECT title, photo, likes, author FROM comics WHERE flag = ?';
-    console.log(req.params.flag);
-    if(req.params.flag <4 && req.params.flag >0)
-        var selectResult = await pool.queryParam_Parse(selectFlagQuery, [req.params.flag]);
-    else
+    var selectResult = await pool.queryParam_Parse(selectFlagQuery, [flag]);
+
+    if(flag > 3 || flag < 0)
         res.status(200).send(util.successFalse(statusCode.BAD_REQUEST, resMessage.BAD_PARAMS));
     
     if (!selectResult) {
