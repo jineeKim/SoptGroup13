@@ -4,9 +4,11 @@ var router = express.Router();
 const util = require('../../module/utils/utils');
 const statusCode = require('../../module/utils/statusCode');
 const resMessage = require('../../module/utils/responseMessage');
+const authUtil = require('../../module/utils/authUtils');
 
 const pool = require('../../module/pool');
 const crypto = require('crypto-promise');
+const jwtUtils = require('../../module/jwt');
 
 router.post('/', async (req, res) => {
     const selectIdQuery = 'SELECT id FROM user WHERE id = ?';

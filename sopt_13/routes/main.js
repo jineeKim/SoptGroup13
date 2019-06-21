@@ -24,7 +24,6 @@ router.post('/postComics', upload.single('photo'), async (req, res) => {
 
 router.post('/:flag', async (req, res) => {
     const flag = req.params.flag;
-    console.log(flag);
     const selectFlagQuery = 'SELECT title, photo, likes, author FROM comics WHERE flag = ?';
     var selectResult = await pool.queryParam_Parse(selectFlagQuery, [flag]);
 

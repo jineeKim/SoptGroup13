@@ -37,5 +37,12 @@ module.exports = {
     EPISODE_LOAD_SUCCESS: "만화 에피소드 불러오기 성공",
     LIKE_SUCCESS: "좋아요 성공.",
     COMMENTS_LOAD_SUCCESS: "댓글 불러오기 성공",
-    COMMENTS_CREATE_SUCCESS: "댓글 불러오기 성공"
+    COMMENTS_CREATE_SUCCESS: "댓글 불러오기 성공",
+    
+    INVALID_TOKEN: "잘못된 형식의 토큰입니다.",
+    EMPTY_TOKEN: "토큰값이 존재하지 않습니다.",
+    EXPRIED_TOKEN: "만료된 토큰입니다.",
+    EMPTY_REFRESH_TOKEN: "재발급 토큰이 존재하지 않습니다.",
+    CREATE_TOKEN: "토큰 발급 완료.",
+    REFRESH_TOKEN: "토큰 재발급 완료.",
 };
